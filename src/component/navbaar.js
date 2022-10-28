@@ -24,14 +24,14 @@ function Navbaar() {
 
             </div>
                 <div className='hidden sm:flex w-full  h-[60px] justify-between mt-2 py-3  '>
-                        <div className=''>
+                        <div className='flex mx-3'>
                                       LOGO  
                         </div>
                         <div className='flex min-w-[200px] bg-[#CED4DA] rounded-lg'>
                           <a className='px-2 py-2'><FcSearch size={25}/></a><input className="bg-[#CED4DA] rounded-lg min-w-[200px]" type="text" placeholder='Search what you want '></input>
                     </div>
                     <div className='flex mx-5'>
-                        Create Accoutn<a className='text-[#4C6FF5]'>.its Free</a><GoTriangleDown/>
+                        Create Accoutn<a className='text-[#0033ff] cursor-pointer'>.its Free</a>
                       </div>
              
     

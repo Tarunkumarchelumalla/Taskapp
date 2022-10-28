@@ -1,13 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
-function Home() {
+import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
+
+function Home({handlelog}) {
   const[grp,setGrp]=useState("Join Group")
   function handlegrp(){
     let result = grp.localeCompare("Join Group");
-    console.log(result);
+      handlelog();
   result===0?setGrp("Leave Group"): setGrp("Join Group");
+
   }
-  return (
+  return (<>
     <div className='flex-col justify-around h-[300px] w-full sm:h-[400px]   bg-hero-pattern bg-center '>
         <div className=' h-[200px] '>
           <ul>
@@ -21,6 +24,11 @@ function Home() {
             <a className='text-sm text-white cursor-pointer'>142,765 Computer Engineers follow this</a>
         </div>
     </div>
+    <div className='sm:hidden fixed bottom-0 right-0 p-2 rounded-full  bg-[#FF6B6B] shadow-lg '>
+          <CreateOutlinedIcon style={{color:"white"}} />
+          
+    </div>
+    </>
   )
 }
 

@@ -2,6 +2,8 @@ import React from 'react'
 import { GoTriangleDown } from 'react-icons/go';
 import { BsThreeDots } from 'react-icons/bs';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
+import { AiOutlineShareAlt } from 'react-icons/ai';
+
 import PlaceIcon from '@mui/icons-material/Place';
 import { TextField } from '@mui/material';
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
@@ -66,10 +68,10 @@ function Posts() {
 <hr ></hr>
     <div className='flex mt-2 py-2 shadow-sm sm:mx-20 '>
 
-      <div>
+      <div className=''>
        
         {docs.map((curr)=>(
-    <div className='flex-col w-full '>
+    <div className='flex-col w-full  py-6 shadow-md'>
         <div className='flex h-[250px] bg-article w-full '>
    
         </div>
@@ -97,7 +99,7 @@ function Posts() {
            </div>
             <div className="flex text-black bg-[#F1F3F5] px-5 rounded-md text py-2">
                 <h5 className='px-2 '>Share</h5>
-                <GoTriangleDown/>
+                <AiOutlineShareAlt size={20}/>
            </div>
         </div>
 
